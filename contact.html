@@ -1,0 +1,46 @@
+<head>
+  <script src='https://www.google.com/recaptcha/api.js'></script> <!-- Require for Google Recaptcha -->
+</head>
+<body>
+<!-- FORM -->
+<div class="container hello">  
+  <form id="contact" action="enquiry.php" method="post">
+    <h3>Get in Touch</h3>
+    <h4>Thank you for the interest<br/>
+      <br>
+We aim to have an initial response to you within 24 hours, in most cases much less.</h4>
+    
+    <fieldset>
+      <input placeholder="Your name" type="text" name="name" id="name" tabindex="1" required>
+    </fieldset>
+    
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" name="email" id="email" tabindex="2" required>
+    </fieldset>
+    
+    <fieldset>
+      <input placeholder="Your Phone Number" type="text" name="tel" id="tel" tabindex="3" required>
+    </fieldset>
+    
+    <fieldset>
+       <textarea placeholder="What would you like to know?" type="text" name="comment" id="comment" tabindex="4" required>
+        </textarea>
+      </fieldset>
+    
+    <fieldset>
+       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit
+      </button>
+      <button name="reset" type="reset" id="contact-reset">Reset
+      </button>
+      
+    </fieldset>
+    
+    <fieldset style="padding: 20px 0px;">
+     <center>
+      <div class="g-recaptcha" data-sitekey="<!-- Site Key HERE -->"></div>
+     </center>
+    </fieldset>
+  </form>
+</div>
+  <!-- FORM -->
+</body>
