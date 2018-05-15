@@ -41,7 +41,7 @@ if(intval($responseKeys["success"]) !== 1) {
 
 //NEW RECAPTCHA
 
-$email_from = "billy.farroll@hotmail.com"; 
+$email_from = "billy.farroll@hotmail.com"; // This email address has to be the same email on the server if using Fasthots server i.e. SlickFin server - billy@SlickFin.com
 $message = $_POST["message"];
 $email_subject = "<!-- Subject of Form -->";
 $headers =   // Header for the email sent to whatever email address in entered in the email to variable. 
