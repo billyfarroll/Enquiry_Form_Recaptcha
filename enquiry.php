@@ -3,7 +3,7 @@ $blockwords="http,href,www";
 if(!empty($_SERVER['REMOTE_ADDR'])&&!empty($_POST)){$_POST['REMOTE_ADDR']=$_SERVER['REMOTE_ADDR'];}if(!empty($blockwords)&&!empty($_POST)){$useBlocks=explode(",",$blockwords);foreach($useBlocks as $blockWord){foreach($_POST as $Name=>$Value){$Value=trim($Value);$Value=strtolower($Value);if(!empty($Value)&&strpos($Value,$blockWord)!==false){exit();}}}}
 ?>
 <?php
-$email_to = "info@newhavenmarina.co.uk, press@strawberrymarketing.com, billy@strawberrymarketing.com";
+$email_to = "billy@strawberrymarketing.com";
 $name = $_POST["name"];
 $tel = $_POST["tel"];
 $email = $_POST["email"];
@@ -52,7 +52,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";  // To have an un
 
 
 $message = '<html><body>';
-$message .= "<h1 style='color: #0d1237;'> Newhaven Marina Enquiry </h1>";
+$message .= "<h1 style='color: #0d1237;'>Enquiry </h1>";
 $message .= "<h2 style='color: #0d1237; font-size: 22px;'> Name: " . $name . "</h1>";
 $message .= "<p style='font-weight: bold;'> Telephone Number: " . $tel . "</p>"; 
 $message .= "<p style='font-weight: bold;'> Email Address: " . $email . "</p>";
